@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Lindani Jonase Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="blog">
+  <video class="site-bg-video" autoplay loop muted playsinline>
+    <source src="Assets/video/bg.mp4" type="video/mp4" />
+  </video>
+  <div class="page-bg"></div>
+  <div class="landing-bg-anim"></div>
+  <div class="layout">
+    <div class="sidebar sidebar-visible">
+      <div class="sidebar-top">
+        <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <div class="sidebar-logo-area">
+          <img src="Assets/Images/JONAS2.JPG" alt="Sidebar Avatar" class="sidebar-avatar" />
+          <span class="sidebar-logo-name">Lindani Jonase</span>
+        </div>
+      </div>
+      <div class="sidebar-section-label">Menu</div>
+      <ul class="sidebar-links">
+        <li><a href="index.html"><span class="sidebar-emoji">🏠</span> <span>Home</span></a></li>
+        <li><a href="about.html"><span class="sidebar-emoji">👤</span> <span>About</span></a></li>
+        <li><a href="portfolio.html"><span class="sidebar-emoji">💼</span> <span>Portfolio</span></a></li>
+        <li><a href="blog.html" class="active"><span class="sidebar-emoji">📝</span> <span>Blog</span></a></li>
+        <li><a href="weather.html"><span class="sidebar-emoji">☀️</span> <span>Weather</span></a></li>
+        <li><a href="contact.html"><span class="sidebar-emoji">✉️</span> <span>Contact</span></a></li>
+        <li><a href="game.html"><span class="sidebar-emoji">🎮</span> <span>Game</span></a></li>
+      </ul>
+      <div class="sidebar-bottom">
+        <div class="sidebar-clock" id="sidebarClock" title="Current Time">--:--:--</div>
+        <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
+      </div>
+    </div>
+    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 2rem;box-sizing:border-box;">
+      <section class="hero-section animate-fade-in" style="min-height:100vh;padding-top:0;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;">
+        <div class="hero-blur-bg"></div>
+        <h1 class="hero-title">Blog</h1>
+        <div class="portfolio-grid">
+          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.1s;max-width:700px;">
+            <h2 style="color:#181c20;margin-bottom:0.7rem;">Building My Modern Portfolio Website: A Deep Dive</h2>
+            <p style="color:#b3e6ff;font-size:1.08rem;margin-bottom:1.2rem;">A behind-the-scenes look at designing, developing, and modernizing my interactive portfolio and weather dashboard.</p>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Project Vision</h3>
+            <ul style="margin-bottom:1.2rem;">
+              <li>Visually striking dark theme with navy, black, and deep accent colors</li>
+              <li>Highly interactive: live weather dashboard, animated backgrounds, smooth transitions</li>
+              <li>Professional & personal: formal intro, detailed about, portfolio of latest projects</li>
+              <li>Responsive & accessible for all devices</li>
+            </ul>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Key Features</h3>
+            <ul style="margin-bottom:1.2rem;">
+              <li><b>Modern Dark Theme:</b> Custom palette, gradients, glassmorphism, and video backgrounds</li>
+              <li><b>Sidebar Navigation:</b> Fixed, collapsible, with icons and live clock</li>
+              <li><b>Home & About:</b> Formal intro, skills, and a modern card layout</li>
+              <li><b>Portfolio Showcase:</b> Latest projects in stylish cards</li>
+              <li><b>Weather Dashboard:</b> Real-time data, animated backgrounds, 5-day forecast, geolocation, robust error handling</li>
+              <li><b>Blog & Contact:</b> Technical articles and a modern contact form</li>
+              <li><b>Game Page:</b> A fun, interactive JavaScript game</li>
+            </ul>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Tech Stack</h3>
+            <ul style="margin-bottom:1.2rem;">
+              <li><b>HTML5:</b> Semantic, accessible markup</li>
+              <li><b>CSS3:</b> Custom properties, Flexbox, Grid, glassmorphism, gradients, and video backgrounds</li>
+              <li><b>Vanilla JavaScript (ES6+):</b> All interactivity, API integration, geolocation, and animations (no React or frameworks)</li>
+              <li><b>OpenWeatherMap API:</b> Real-time weather data (current, hourly, 5-day)</li>
+              <li><b>FontAwesome:</b> Crisp, scalable icons</li>
+              <li><b>Responsive Design:</b> Media queries and flexible layouts for all devices</li>
+              <li><b>Assets:</b> Custom images, profile photos, and a looping background video</li>
+            </ul>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Debugging & Modernization</h3>
+            <ul style="margin-bottom:1.2rem;">
+              <li>Checked all image/script links, set up linter, improved accessibility, and optimized performance</li>
+              <li>Removed outdated elements, unified all pages, and added animated/video backgrounds</li>
+            </ul>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Challenges & Solutions</h3>
+            <ul style="margin-bottom:1.2rem;">
+              <li>Weather API integration: geolocation, error handling, and data formatting</li>
+              <li>Animated backgrounds: balancing visual appeal with readability and performance</li>
+              <li>Responsiveness: ensuring a great look on all devices</li>
+            </ul>
+            <h3 style="color:#0a1124;margin-top:1.2rem;">Final Thoughts</h3>
+            <p style="margin-bottom:0.7rem;">This project blends design, interactivity, and real-world data into a single, cohesive portfolio. The result is a site that not only showcases my work but also demonstrates my ability to build modern, user-friendly web applications.</p>
+            <p style="color:#ffe066;font-size:1.08rem;margin-bottom:0.7rem;">Check it out, explore the weather dashboard, and let me know what you think!</p>
+            <p style="font-size:0.98rem;color:#b3e6ff;">If you have any questions about the build process, want to collaborate, or just want to say hi, feel free to reach out via the contact page!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+</html> 

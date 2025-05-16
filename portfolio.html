@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Lindani Jonase Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <video class="site-bg-video" autoplay loop muted playsinline>
+    <source src="Assets/video/bg.mp4" type="video/mp4" />
+  </video>
+  <div class="page-bg"></div>
+  <div class="landing-bg-anim"></div>
+  <div class="layout">
+    <div class="sidebar sidebar-visible">
+      <div class="sidebar-top">
+        <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <div class="sidebar-logo-area">
+          <img src="Assets/Images/JONAS2.JPG" alt="Sidebar Avatar" class="sidebar-avatar" />
+          <span class="sidebar-logo-name">Lindani Jonase</span>
+        </div>
+      </div>
+      <div class="sidebar-section-label">Menu</div>
+      <ul class="sidebar-links">
+        <li><a href="index.html"><span class="sidebar-emoji">🏠</span> <span>Home</span></a></li>
+        <li><a href="about.html"><span class="sidebar-emoji">👤</span> <span>About</span></a></li>
+        <li><a href="portfolio.html" class="active"><span class="sidebar-emoji">💼</span> <span>Portfolio</span></a></li>
+        <li><a href="blog.html"><span class="sidebar-emoji">📝</span> <span>Blog</span></a></li>
+        <li><a href="weather.html"><span class="sidebar-emoji">☀️</span> <span>Weather</span></a></li>
+        <li><a href="contact.html"><span class="sidebar-emoji">✉️</span> <span>Contact</span></a></li>
+        <li><a href="game.html"><span class="sidebar-emoji">🎮</span> <span>Game</span></a></li>
+      </ul>
+      <div class="sidebar-bottom">
+        <div class="sidebar-clock" id="sidebarClock" title="Current Time">--:--:--</div>
+        <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
+      </div>
+    </div>
+    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 2rem;box-sizing:border-box;">
+      <section class="hero-section animate-fade-in" style="min-height:100vh;padding-top:0;display:flex;flex-direction:column;justify-content:center;">
+        <h1 class="hero-title">My Projects</h1>
+        <div class="portfolio-grid">
+          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.1s;">
+            <h3 style="color:var(--text-light);margin-bottom:0.5rem;">chess_multiplayer</h3>
+            <div style="color:#b0b8c1;">TypeScript</div>
+            <p style="margin:0.7rem 0 0 0;">A multiplayer chess game. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+          </div>
+          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.2s;">
+            <h3 style="color:var(--text-light);margin-bottom:0.5rem;">Wbsite-Builder</h3>
+            <div style="color:#b0b8c1;">Python</div>
+            <p style="margin:0.7rem 0 0 0;">A website builder tool. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+          </div>
+          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.3s;">
+            <h3 style="color:var(--text-light);margin-bottom:0.5rem;">Tic-Tac-Toe</h3>
+            <div style="color:#b0b8c1;">Python</div>
+            <p style="margin:0.7rem 0 0 0;">A classic Tic-Tac-Toe game. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+          </div>
+          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.4s;">
+            <h3 style="color:var(--text-light);margin-bottom:0.5rem;">profile_site</h3>
+            <div style="color:#b0b8c1;">CSS</div>
+            <p style="margin:0.7rem 0 0 0;">A personal profile website. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+</html> 
