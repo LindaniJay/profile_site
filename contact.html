@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Lindani Jonase Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="landing-bg-anim"></div>
+  <div class="layout">
+    <div class="sidebar sidebar-visible">
+      <div class="sidebar-top">
+        <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <div class="sidebar-logo-area">
+          <img src="Assets/Images/JONAS2.JPG" alt="Sidebar Avatar" class="sidebar-avatar" />
+          <span class="sidebar-logo-name">Lindani Jonase</span>
+        </div>
+      </div>
+      <div class="sidebar-section-label">Menu</div>
+      <ul class="sidebar-links">
+        <li><a href="index.html"><span class="sidebar-emoji">🏠</span> <span>Home</span></a></li>
+        <li><a href="about.html"><span class="sidebar-emoji">👤</span> <span>About</span></a></li>
+        <li><a href="portfolio.html"><span class="sidebar-emoji">💼</span> <span>Portfolio</span></a></li>
+        <li><a href="blog.html"><span class="sidebar-emoji">📝</span> <span>Blog</span></a></li>
+        <li><a href="weather.html"><span class="sidebar-emoji">☀️</span> <span>Weather</span></a></li>
+        <li><a href="contact.html" class="active"><span class="sidebar-emoji">✉️</span> <span>Contact</span></a></li>
+        <li><a href="game.html"><span class="sidebar-emoji">🎮</span> <span>Game</span></a></li>
+      </ul>
+      <div class="sidebar-bottom">
+        <div class="sidebar-clock" id="sidebarClock" title="Current Time">--:--:--</div>
+        <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
+      </div>
+    </div>
+    <div class="main-content">
+      <section class="hero-section animate-fade-in">
+        <h1 class="hero-title">Contact Me</h1>
+        <div class="modern-card animate-fade-in" style="--fade-in-delay:0.1s;">
+          <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
+            <input type="text" name="name" placeholder="Your Name" required style="padding: 0.75rem; border-radius: 0.375rem; border: none; font-size: 1rem;" />
+            <input type="email" name="email" placeholder="Your Email" required style="padding: 0.75rem; border-radius: 0.375rem; border: none; font-size: 1rem;" />
+            <textarea name="message" placeholder="Your Message" required rows="5" style="padding: 0.75rem; border-radius: 0.375rem; border: none; font-size: 1rem;"></textarea>
+            <button type="submit" class="modern-btn" style="width: 100%; justify-content: center;">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+</html> 
