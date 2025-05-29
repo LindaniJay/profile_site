@@ -2159,3 +2159,35 @@ body.blog .hero-blur-bg {
     padding-right: 0.7rem !important;
   }
 }
+@media (max-width: 900px) {
+  .about-modern-card,
+  .weather-card-glass,
+  .modern-card,
+  .profile-card,
+  .content-card,
+  .blog-card {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    max-width: 98vw !important;
+    width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+}
+@media (max-width: 600px) {
+  .about-modern-card,
+  .weather-card-glass,
+  .modern-card,
+  .profile-card,
+  .content-card,
+  .blog-card {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+    max-width: 98vw !important;
+    width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+}
