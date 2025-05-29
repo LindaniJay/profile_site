@@ -47,28 +47,42 @@
           <div class="modern-card animate-fade-in" style="--fade-in-delay:0.1s;">
             <h3 style="color:var(--text-light);margin-bottom:0.5rem;">chess_multiplayer</h3>
             <div style="color:#b0b8c1;">TypeScript</div>
-            <p style="margin:0.7rem 0 0 0;">A multiplayer chess game. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+            <p style="margin:0.7rem 0 0 0;">A multiplayer chess game.</p>
+            <button class="modern-btn outline view-details-btn" data-project="chess_multiplayer">View Details</button>
           </div>
           <div class="modern-card animate-fade-in" style="--fade-in-delay:0.2s;">
             <h3 style="color:var(--text-light);margin-bottom:0.5rem;">Wbsite-Builder</h3>
             <div style="color:#b0b8c1;">Python</div>
-            <p style="margin:0.7rem 0 0 0;">A website builder tool. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+            <p style="margin:0.7rem 0 0 0;">A website builder tool.</p>
+            <button class="modern-btn outline view-details-btn" data-project="Wbsite-Builder">View Details</button>
           </div>
           <div class="modern-card animate-fade-in" style="--fade-in-delay:0.3s;">
             <h3 style="color:var(--text-light);margin-bottom:0.5rem;">Tic-Tac-Toe</h3>
             <div style="color:#b0b8c1;">Python</div>
-            <p style="margin:0.7rem 0 0 0;">A classic Tic-Tac-Toe game. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+            <p style="margin:0.7rem 0 0 0;">A classic Tic-Tac-Toe game.</p>
+            <button class="modern-btn outline view-details-btn" data-project="Tic-Tac-Toe">View Details</button>
           </div>
           <div class="modern-card animate-fade-in" style="--fade-in-delay:0.4s;">
             <h3 style="color:var(--text-light);margin-bottom:0.5rem;">profile_site</h3>
             <div style="color:#b0b8c1;">CSS</div>
-            <p style="margin:0.7rem 0 0 0;">A personal profile website. <a href="#" style="color:#b0b8c1;text-decoration:underline;">View Project</a></p>
+            <p style="margin:0.7rem 0 0 0;">A personal profile website.</p>
+            <button class="modern-btn outline view-details-btn" data-project="profile_site">View Details</button>
           </div>
         </div>
       </section>
     </div>
   </div>
+  <!-- Project Details Modal (hidden by default) -->
+  <div id="projectModal" class="project-modal" style="display:none;">
+    <div class="project-modal-content">
+      <button class="project-modal-close" id="closeProjectModal" aria-label="Close">&times;</button>
+      <div id="projectModalBody">
+        <!-- JS will populate this with project details -->
+      </div>
+    </div>
+  </div>
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
+  <script src="js/portfolio-modal.js"></script>
 </body>
 </html> 

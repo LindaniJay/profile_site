@@ -2191,3 +2191,147 @@ body.blog .hero-blur-bg {
     box-sizing: border-box !important;
   }
 }
+
+/* Animated Skills Bar Section */
+.skills-visual-section {
+  margin: 2rem auto 0 auto;
+  width: 100%;
+  max-width: 420px;
+}
+.skill-bar-group {
+  margin-bottom: 1.1rem;
+}
+.skill-bar-label {
+  color: #b3e6ff;
+  font-size: 1.01rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.skill-bar {
+  width: 100%;
+  height: 16px;
+  background: rgba(44,62,80,0.55);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px #0002;
+  overflow: hidden;
+  position: relative;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #39ff14 0%, #6ec1e4 100%);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px #39ff1440;
+  transition: width 1.2s cubic-bezier(.23,1.01,.32,1);
+  animation: skillBarGrow 1.2s cubic-bezier(.23,1.01,.32,1) forwards;
+  animation-delay: 0.2s;
+}
+.skill-bar-fill {
+  width: var(--bar-width, 80%);
+}
+@keyframes skillBarGrow {
+  from { width: 0; }
+  to { width: var(--bar-width, 80%); }
+}
+@media (max-width: 600px) {
+  .skills-visual-section {
+    max-width: 99vw;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .skill-bar {
+    height: 14px;
+  }
+  .skill-bar-label {
+    font-size: 0.98rem;
+  }
+}
+
+/* Project Details Modal Styles */
+.project-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(10, 17, 36, 0.85);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  backdrop-filter: blur(4px);
+}
+.project-modal-content {
+  background: rgba(24,28,32,0.98);
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px #000a;
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  max-width: 420px;
+  width: 95vw;
+  color: #e0e0e0;
+  position: relative;
+  animation: fadeInUp 0.5s cubic-bezier(.23,1.01,.32,1);
+}
+.project-modal-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  color: #ffe066;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.18s;
+}
+.project-modal-close:hover {
+  color: #6ec1e4;
+}
+@media (max-width: 600px) {
+  .project-modal-content {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 99vw;
+  }
+  .project-modal-close {
+    top: 0.7rem;
+    right: 0.7rem;
+    font-size: 1.7rem;
+  }
+}
+
+/* Contact Social Media Icons */
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.contact-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(44,62,80,0.85);
+  color: #ffe066;
+  font-size: 2.1rem;
+  box-shadow: 0 2px 12px #0004;
+  transition: background 0.18s, color 0.18s, transform 0.15s;
+  text-decoration: none;
+}
+.contact-social-icon:hover {
+  background: #6ec1e4;
+  color: #181c20;
+  transform: scale(1.12);
+  box-shadow: 0 4px 16px #6ec1e440;
+}
+@media (max-width: 600px) {
+  .contact-social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+  }
+  .contact-socials {
+    gap: 1.2rem;
+  }
+}
