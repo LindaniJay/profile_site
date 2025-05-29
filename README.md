@@ -1,4 +1,4 @@
-# Lindani Jonase Portfolio Website
+# Lindani Jonase Portfolio Website.
 
 A modern, professional, and fully responsive portfolio website for Lindani Jonase. This project is a showcase of advanced front-end development, design, and interactivity, featuring a dark, masculine theme, animated backgrounds, dynamic weather dashboard, and a seamless user experience across all devices.
 
