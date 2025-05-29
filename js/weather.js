@@ -1,3 +1,5 @@
+// Weather dashboard logic: fetches weather data, updates UI, and animates effects
+
 document.addEventListener('DOMContentLoaded', () => {
   const apiKey = "d82c248e3173ba526765c92a5bc7056e";
   const defaultCoords = { lat: -33.9249, lon: 18.4241 }; // Cape Town
@@ -52,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // else no animated bg
   }
 
+  // Fetch weather data from OpenWeatherMap API
   async function fetchWeather(lat, lon) {
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;

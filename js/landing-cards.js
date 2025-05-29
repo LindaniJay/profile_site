@@ -52,4 +52,28 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   updateWeatherMini();
   setInterval(updateWeatherMini, 600000); // update every 10 min
+
+  // Logic for interactive cards/widgets on the home/landing page
+
+  // Example: update greeting card with time of day
+  function updateGreetingCard() {
+    // Get current hour
+    const hour = new Date().getHours();
+    let greeting = 'Hello';
+    if (hour < 12) greeting = 'Good morning';
+    else if (hour < 18) greeting = 'Good afternoon';
+    else greeting = 'Good evening';
+    // Update greeting card text
+    // document.getElementById('greetingCard').textContent = greeting;
+  }
+
+  // Example: update mini weather card
+  function updateMiniWeatherCard() {
+    // Fetch weather and update mini card
+    // ...
+  }
+
+  // On page load, update cards
+  updateGreetingCard();
+  updateMiniWeatherCard();
 }); 

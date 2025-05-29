@@ -1,4 +1,13 @@
+/*
+  Main stylesheet for Lindani Jonase Portfolio Website
+  - Dark, masculine theme
+  - Responsive sidebar/topbar navigation
+  - Glassmorphism, video backgrounds, and modern cards
+  - Weather dashboard and animated effects
+*/
+
 :root {
+  /* Color palette and global variables */
   --fade-in-direction: 40px;
   --fade-in-delay: 0s;
   --primary-dark: #0a1124;
@@ -10,7 +19,9 @@
   --text-light: #e0e0e0;
   --text-dark: #222;
 }
+
 body, html {
+  /* Set up base font, color, and minimum height */
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -18,19 +29,23 @@ body, html {
   position: relative;
   color: var(--text-light);
 }
+
 body::before {
   display: none !important;
 }
+
 .layout, .sidebar, .main-content, .hero-section, .modern-card, .profile-card, .content-card, .about-card, .blog-card, .weather-modern-card, .weather-hour-card, .weather-card-glass {
   position: relative;
   z-index: 1;
   background: none !important;
 }
+
 .hero-blur-bg, .landing-bg-anim, .page-bg {
   display: none !important;
 }
+
 body {
-  font-family: sans-serif;
+  /* Main background and color transition */
   background-color: var(--primary-dark);
   color: var(--text-light);
   transition: background-color 0.3s;
@@ -39,15 +54,18 @@ body {
   background-attachment: fixed;
   padding-top: 0 !important;
 }
+
 body.light {
   background-color: #232b2b;
   color: var(--text-light);
   background-image: none;
 }
+
 body.blog .hero-blur-bg {
   filter: blur(32px) brightness(0.32) grayscale(0.25);
   opacity: 0.92;
 }
+
 .section-title {
   font-size: 2rem;
   text-align: center;
@@ -55,6 +73,7 @@ body.blog .hero-blur-bg {
   margin-bottom: 1.5rem;
   text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
+
 .blog-card {
   background-color: #1f2937;
   padding: 1.5rem;
@@ -62,21 +81,25 @@ body.blog .hero-blur-bg {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s;
 }
+
 .blog-card h3 {
   color: #facc15;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
+
 .blog-card p {
   color: #d1d5db;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
+
 .blog-card a {
   color: #facc15;
   font-weight: 600;
   text-decoration: none;
 }
+
 .copy-btn {
   background-color: #374151;
   color: #facc15;
@@ -89,9 +112,11 @@ body.blog .hero-blur-bg {
   align-items: center;
   gap: 0.5rem;
 }
+
 .copy-btn:hover {
   background-color: #4b5563;
 }
+
 .about-card {
   background: rgba(31, 41, 55, 0.95); /* dark card with slight transparency */
   max-width: 700px;
@@ -102,17 +127,20 @@ body.blog .hero-blur-bg {
   text-align: center;
   color: #d1d5db;
 }
+
 .about-card p {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.7;
 }
+
 @media (max-width: 600px) {
   .about-card {
     padding: 1.5rem 0.5rem;
   }
 }
+
 .content-card {
   background: rgba(31, 41, 55, 0.92);
   border-radius: 1rem;
@@ -122,30 +150,37 @@ body.blog .hero-blur-bg {
   max-width: 900px;
   color: #f3f4f6;
 }
+
 .animate-fade-in {
   animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) both;
   animation-delay: var(--fade-in-delay, 0s);
 }
+
 .animate-fade-in-left {
   animation: fadeInLeft 1s cubic-bezier(.23,1.01,.32,1) both;
   animation-delay: var(--fade-in-delay, 0s);
 }
+
 .animate-fade-in-right {
   animation: fadeInRight 1s cubic-bezier(.23,1.01,.32,1) both;
   animation-delay: var(--fade-in-delay, 0s);
 }
+
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(var(--fade-in-direction, 40px)); }
   100% { opacity: 1; transform: none; }
 }
+
 @keyframes fadeInLeft {
   0% { opacity: 0; transform: translateX(-40px); }
   100% { opacity: 1; transform: none; }
 }
+
 @keyframes fadeInRight {
   0% { opacity: 0; transform: translateX(40px); }
   100% { opacity: 1; transform: none; }
 }
+
 /* Card hover/scale effects */
 .content-card,
 .profile-card,
@@ -154,6 +189,7 @@ body.blog .hero-blur-bg {
 .weather-hour-card {
   transition: box-shadow 0.2s, transform 0.18s;
 }
+
 .content-card:hover,
 .profile-card:hover,
 .weather-modern-card:hover,
@@ -163,10 +199,12 @@ body.blog .hero-blur-bg {
   transform: translateY(-4px) scale(1.03);
   z-index: 2;
 }
+
 .weather-hour-card.now:hover {
   box-shadow: 0 8px 32px #39ff14cc, 0 2px 8px rgba(0,0,0,0.18);
   transform: translateY(-4px) scale(1.08);
 }
+
 .profile-card {
   background: linear-gradient(135deg, #181c20 80%, #232b2b 100%);
   border-radius: 2rem;
@@ -178,6 +216,7 @@ body.blog .hero-blur-bg {
   color: #fff;
   overflow: visible;
 }
+
 .profile-card-header {
   display: flex;
   justify-content: space-between;
@@ -186,22 +225,26 @@ body.blog .hero-blur-bg {
   color: #888;
   margin-bottom: 1.2rem;
 }
+
 .profile-role {
   font-size: 1rem;
   font-weight: 400;
 }
+
 .profile-time {
   display: flex;
   align-items: center;
   gap: 0.3rem;
   font-size: 0.98rem;
 }
+
 .profile-main {
   display: flex;
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 1.2rem;
 }
+
 .profile-img {
   width: 64px;
   height: 64px;
@@ -209,16 +252,19 @@ body.blog .hero-blur-bg {
   background: #222;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
+
 .profile-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .profile-name {
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
+
 .profile-status {
   font-size: 1rem;
   color: #b5f7b7;
@@ -226,6 +272,7 @@ body.blog .hero-blur-bg {
   align-items: center;
   gap: 0.4rem;
 }
+
 .status-dot {
   display: inline-block;
   width: 10px;
@@ -235,12 +282,14 @@ body.blog .hero-blur-bg {
   margin-right: 0.2rem;
   box-shadow: 0 0 6px #4ade80;
 }
+
 .profile-actions {
   display: flex;
   gap: 1.2rem;
   margin: 1.5rem 0 2.2rem 0;
   justify-content: center;
 }
+
 .profile-btn {
   background: #23272f;
   color: #fff;
@@ -256,20 +305,24 @@ body.blog .hero-blur-bg {
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
+
 .profile-btn:hover {
   background: #353b45;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
+
 .profile-btn:active {
   background: #181c20;
   transform: scale(0.98);
 }
+
 .profile-btn-icon {
   display: flex;
   align-items: center;
   font-size: 1.2em;
 }
+
 .profile-glow-bar {
   background: linear-gradient(90deg, #aaff00 0%, #39ff14 100%);
   color: #181c20;
@@ -287,9 +340,11 @@ body.blog .hero-blur-bg {
   gap: 0.5rem;
   letter-spacing: 0.01em;
 }
+
 .glow-icon {
   font-size: 1.2em;
 }
+
 @media (max-width: 600px) {
   .profile-card {
     padding: 1.2rem 0.3rem 0 0.3rem;
@@ -299,6 +354,7 @@ body.blog .hero-blur-bg {
     margin: 0 -0.3rem;
   }
 }
+
 .weather-modern-card {
   background: rgba(30, 34, 40, 0.92);
   border-radius: 2rem;
@@ -312,6 +368,7 @@ body.blog .hero-blur-bg {
   position: relative;
   overflow: visible;
 }
+
 .weather-main-info {
   display: flex;
   flex-wrap: wrap;
@@ -320,16 +377,19 @@ body.blog .hero-blur-bg {
   gap: 0.7rem 1.2rem;
   margin-bottom: 1.5rem;
 }
+
 .weather-location {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
+
 .weather-temp {
   font-size: 2.5rem;
   font-weight: 700;
   margin-right: 0.5rem;
 }
+
 .weather-wind {
   font-size: 1.05rem;
   color: #b3e6ff;
@@ -337,15 +397,18 @@ body.blog .hero-blur-bg {
   align-items: center;
   gap: 0.3rem;
 }
+
 .weather-summary {
   font-size: 1.1rem;
   font-weight: 500;
   color: #e0e0e0;
 }
+
 .weather-highlow {
   font-size: 1rem;
   color: #b5f7b7;
 }
+
 .weather-hourly-scroll {
   display: flex;
   gap: 1.3rem;
@@ -355,17 +418,21 @@ body.blog .hero-blur-bg {
   scrollbar-width: thin;
   scrollbar-color: #39ff14 #232b2b;
 }
+
 .weather-hourly-scroll::-webkit-scrollbar {
   height: 8px;
 }
+
 .weather-hourly-scroll::-webkit-scrollbar-thumb {
   background: #39ff14;
   border-radius: 4px;
 }
+
 .weather-hourly-scroll::-webkit-scrollbar-track {
   background: #232b2b;
   border-radius: 4px;
 }
+
 .weather-hour-card {
   border: 1.5px solid #b3e6ff55 !important;
   background: rgba(24, 28, 32, 0.92);
@@ -383,6 +450,7 @@ body.blog .hero-blur-bg {
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-bottom: 0.2rem;
 }
+
 .weather-hour-card.now {
   background: linear-gradient(180deg, #232b2b 60%, #39ff14 100%);
   color: #181c20;
@@ -391,15 +459,18 @@ body.blog .hero-blur-bg {
   transform: scale(1.08);
   border: 2px solid #39ff14 !important;
 }
+
 .weather-hour-time {
   font-size: 0.95rem;
   margin-bottom: 0.2rem;
 }
+
 .weather-hour-rain {
   font-size: 0.93rem;
   margin-top: 0.2rem;
   color: #b3e6ff;
 }
+
 .weather-hour-bar {
   width: 32px;
   height: 32px;
@@ -412,6 +483,7 @@ body.blog .hero-blur-bg {
   align-items: flex-end;
   justify-content: center;
 }
+
 .weather-hour-bar-water {
   width: 100%;
   background: linear-gradient(180deg, #b3e6ff 0%, #39aaff 100%);
@@ -422,10 +494,12 @@ body.blog .hero-blur-bg {
   transition: height 0.7s cubic-bezier(.23,1.01,.32,1);
   animation: waterRise 1.2s cubic-bezier(.23,1.01,.32,1);
 }
+
 @keyframes waterRise {
   0% { height: 0; }
   100% { height: var(--water-level, 60%); }
 }
+
 @media (max-width: 600px) {
   .weather-modern-card {
     padding: 1.2rem 0.3rem 0.7rem 0.3rem;
@@ -437,6 +511,7 @@ body.blog .hero-blur-bg {
     padding: 0.5rem 0.1rem 0.6rem 0.1rem;
   }
 }
+
 .modern-card {
   background: linear-gradient(135deg, #181c20 80%, #232b2b 100%);
   border-radius: 2rem;
@@ -451,12 +526,14 @@ body.blog .hero-blur-bg {
   flex-direction: column;
   align-items: stretch;
 }
+
 .modern-card-header {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.2rem;
 }
+
 .modern-card-icon {
   width: 44px;
   height: 44px;
@@ -467,17 +544,20 @@ body.blog .hero-blur-bg {
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   font-size: 1.5rem;
 }
+
 .modern-card-title {
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
+
 .modern-card-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
 .modern-card-actions {
   display: flex;
   gap: 1.2rem;
@@ -485,6 +565,7 @@ body.blog .hero-blur-bg {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .modern-btn {
   background: #23272f;
   color: #fff;
@@ -502,30 +583,36 @@ body.blog .hero-blur-bg {
   text-decoration: none;
   outline: none;
 }
+
 .modern-btn:hover {
   background: #353b45;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   color: #ffe066;
 }
+
 .modern-btn:active {
   background: #181c20;
   transform: scale(0.98);
 }
+
 .modern-btn.outline {
   background: transparent;
   border: 2px solid #ffe066;
   color: #ffe066;
 }
+
 .modern-btn.outline:hover {
   background: #ffe066;
   color: #181c20;
 }
+
 .modern-btn-icon {
   display: flex;
   align-items: center;
   font-size: 1.2em;
 }
+
 .modern-card-glow-bar {
   background: linear-gradient(90deg, #aaff00 0%, #39ff14 100%);
   color: #181c20;
@@ -545,22 +632,27 @@ body.blog .hero-blur-bg {
   animation: glowBarShift 12s linear infinite alternate;
   background-size: 200% 200%;
 }
+
 .blog-glow {
   animation: blogGlowShift 14s linear infinite alternate;
   background: linear-gradient(90deg, #ffe066 0%, #ff6ec4 100%);
 }
+
 .weather-glow {
   animation: weatherGlowShift 16s linear infinite alternate;
   background: linear-gradient(90deg, #b3e6ff 0%, #39ff14 100%);
 }
+
 .contact-glow {
   animation: contactGlowShift 18s linear infinite alternate;
   background: linear-gradient(90deg, #ffe066 0%, #39aaff 100%);
 }
+
 @keyframes glowBarShift {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
+
 @keyframes blogGlowShift {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
@@ -2036,6 +2128,8 @@ body.blog .hero-blur-bg {
   .hero-section {
     min-height: 100dvh !important;
     padding-top: 1.2rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
     box-sizing: border-box;
   }
 }
@@ -2044,6 +2138,8 @@ body.blog .hero-blur-bg {
   .hero-section {
     min-height: 100dvh !important;
     padding-top: 1.2rem !important;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
     box-sizing: border-box;
   }
   .modern-card,
@@ -2055,5 +2151,11 @@ body.blog .hero-blur-bg {
     padding: 1rem 0.3rem !important;
     margin: 1rem auto !important;
     max-width: 99vw !important;
+  }
+  /* Fix for weather and about custom card containers */
+  .about-modern-card,
+  .weather-card-glass {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
   }
 }

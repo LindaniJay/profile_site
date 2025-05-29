@@ -1,18 +1,24 @@
+<!-- Main HTML structure for the Home/Landing page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character set and responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lindani Jonase | Portfolio</title>
+  <title>Home | Lindani Jonase Portfolio</title>
+  <!-- Link to main stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Video background for the entire site -->
   <video class="site-bg-video" autoplay loop muted playsinline>
     <source src="Assets/video/bg.mp4" type="video/mp4" />
   </video>
   <div class="landing-bg-anim"></div>
   <div id="particles-js"></div>
+  <!-- Layout wrapper: contains sidebar/topbar and main content -->
   <div class="layout">
+    <!-- Sidebar (desktop) or Topbar (mobile): navigation, avatar, theme toggle, clock -->
     <div class="sidebar sidebar-visible">
       <div class="sidebar-top">
         <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
@@ -40,8 +46,11 @@
         <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
       </div>
     </div>
+    <!-- Main content area: hero section, cards, etc. -->
     <div class="main-content">
+      <!-- Hero section: formal intro, profile image, etc. -->
       <section class="hero-section animate-fade-in" style="min-height:100vh;padding-top:0;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+        <!-- Blurred background image for hero -->
         <div class="hero-blur-bg"></div>
         <img src="Assets/Images/JONAS.JPG" alt="Lindani Jonase" class="hero-avatar" />
         <h1 class="hero-title" style="margin-bottom:0.7rem;">Welcome to My Portfolio</h1>
