@@ -2031,3 +2031,29 @@ body.blog .hero-blur-bg {
     font-size: 1rem;
   }
 }
+@media (max-width: 900px) {
+  .main-content,
+  .hero-section {
+    min-height: 100dvh !important;
+    padding-top: 1.2rem !important;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .main-content,
+  .hero-section {
+    min-height: 100dvh !important;
+    padding-top: 1.2rem !important;
+    box-sizing: border-box;
+  }
+  .modern-card,
+  .profile-card,
+  .weather-modern-card,
+  .about-card,
+  .content-card,
+  .blog-card {
+    padding: 1rem 0.3rem !important;
+    margin: 1rem auto !important;
+    max-width: 99vw !important;
+  }
+}
