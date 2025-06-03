@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Lindani Jonase Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="Assets/Images/JONAS2.JPG">
 </head>
 <body class="blog">
   <video class="site-bg-video" autoplay loop muted playsinline>
@@ -45,57 +46,69 @@
         <div class="hero-blur-bg"></div>
         <h1 class="hero-title">Blog</h1>
         <div class="portfolio-grid">
-          <div class="modern-card animate-fade-in" style="--fade-in-delay:0.1s;max-width:700px;">
-            <h2 style="color:#181c20;margin-bottom:0.7rem;">Building My Modern Portfolio Website: A Deep Dive</h2>
-            <p style="color:#b3e6ff;font-size:1.08rem;margin-bottom:1.2rem;">A behind-the-scenes look at designing, developing, and modernizing my interactive portfolio and weather dashboard.</p>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Project Vision</h3>
-            <ul style="margin-bottom:1.2rem;">
-              <li>Visually striking dark theme with navy, black, and deep accent colors</li>
-              <li>Highly interactive: live weather dashboard, animated backgrounds, smooth transitions</li>
-              <li>Professional & personal: formal intro, detailed about, portfolio of latest projects</li>
-              <li>Responsive & accessible for all devices</li>
-            </ul>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Key Features</h3>
-            <ul style="margin-bottom:1.2rem;">
-              <li><b>Modern Dark Theme:</b> Custom palette, gradients, glassmorphism, and video backgrounds</li>
-              <li><b>Sidebar Navigation:</b> Fixed, collapsible, with icons and live clock</li>
-              <li><b>Home & About:</b> Formal intro, skills, and a modern card layout</li>
-              <li><b>Portfolio Showcase:</b> Latest projects in stylish cards</li>
-              <li><b>Weather Dashboard:</b> Real-time data, animated backgrounds, 5-day forecast, geolocation, robust error handling</li>
-              <li><b>Blog & Contact:</b> Technical articles and a modern contact form</li>
-              <li><b>Game Page:</b> A fun, interactive JavaScript game</li>
-            </ul>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Tech Stack</h3>
-            <ul style="margin-bottom:1.2rem;">
-              <li><b>HTML5:</b> Semantic, accessible markup</li>
-              <li><b>CSS3:</b> Custom properties, Flexbox, Grid, glassmorphism, gradients, and video backgrounds</li>
-              <li><b>Vanilla JavaScript (ES6+):</b> All interactivity, API integration, geolocation, and animations (no React or frameworks)</li>
-              <li><b>OpenWeatherMap API:</b> Real-time weather data (current, hourly, 5-day)</li>
-              <li><b>FontAwesome:</b> Crisp, scalable icons</li>
-              <li><b>Responsive Design:</b> Media queries and flexible layouts for all devices</li>
-              <li><b>Assets:</b> Custom images, profile photos, and a looping background video</li>
-            </ul>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Debugging & Modernization</h3>
-            <ul style="margin-bottom:1.2rem;">
-              <li>Checked all image/script links, set up linter, improved accessibility, and optimized performance</li>
-              <li>Removed outdated elements, unified all pages, and added animated/video backgrounds</li>
-            </ul>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Challenges & Solutions</h3>
-            <ul style="margin-bottom:1.2rem;">
-              <li>Weather API integration: geolocation, error handling, and data formatting</li>
-              <li>Animated backgrounds: balancing visual appeal with readability and performance</li>
-              <li>Responsiveness: ensuring a great look on all devices</li>
-            </ul>
-            <h3 style="color:#0a1124;margin-top:1.2rem;">Final Thoughts</h3>
-            <p style="margin-bottom:0.7rem;">This project blends design, interactivity, and real-world data into a single, cohesive portfolio. The result is a site that not only showcases my work but also demonstrates my ability to build modern, user-friendly web applications.</p>
-            <p style="color:#ffe066;font-size:1.08rem;margin-bottom:0.7rem;">Check it out, explore the weather dashboard, and let me know what you think!</p>
-            <p style="font-size:0.98rem;color:#b3e6ff;">If you have any questions about the build process, want to collaborate, or just want to say hi, feel free to reach out via the contact page!</p>
+          <div class="modern-card animate-fade-in" id="blogCard" style="--fade-in-delay:0.1s;max-width:700px;">
+            <div id="blogContentShort">
+              <!-- Short/truncated content will be injected by JS -->
+            </div>
+            <div id="blogContentFull" style="display:none;">
+              <!-- Full content will be injected by JS -->
+            </div>
+            <button id="seeMoreBtn" class="modern-btn outline" style="margin-top:1.2rem;">See more</button>
           </div>
         </div>
       </section>
     </div>
   </div>
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top" style="display:none;position:fixed;bottom:2.5rem;right:2.5rem;z-index:9999;background:#232b2b;color:#ffe066;border:none;border-radius:50%;width:48px;height:48px;font-size:2rem;box-shadow:0 2px 12px #0008;cursor:pointer;transition:opacity 0.3s;opacity:0.85;"><i class="fas fa-arrow-up"></i></button>
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
+  <script>
+  // Blog post content as plain text (for truncation)
+  const blogFullText = `Building My Modern Portfolio Website: A Deep Dive\n\nA behind-the-scenes look at designing, developing, and modernizing my interactive portfolio and weather dashboard.\n\nProject Vision\n- Visually striking dark theme with navy, black, and deep accent colors\n- Highly interactive: live weather dashboard, animated backgrounds, smooth transitions\n- Professional & personal: formal intro, detailed about, portfolio of latest projects\n- Responsive & accessible for all devices\n\nKey Features\n- Modern Dark Theme: Custom palette, gradients, glassmorphism, and video backgrounds\n- Sidebar Navigation: Fixed, collapsible, with icons and live clock\n- Home & About: Formal intro, skills, and a modern card layout\n- Portfolio Showcase: Latest projects in stylish cards\n- Weather Dashboard: Real-time data, animated backgrounds, 5-day forecast, geolocation, robust error handling\n- Blog & Contact: Technical articles and a modern contact form\n- Game Page: A fun, interactive JavaScript game\n\nTech Stack\n- HTML5: Semantic, accessible markup\n- CSS3: Custom properties, Flexbox, Grid, glassmorphism, gradients, and video backgrounds\n- Vanilla JavaScript (ES6+): All interactivity, API integration, geolocation, and animations (no React or frameworks)\n- OpenWeatherMap API: Real-time weather data (current, hourly, 5-day)\n- FontAwesome: Crisp, scalable icons\n- Responsive Design: Media queries and flexible layouts for all devices\n- Assets: Custom images, profile photos, and a looping background video\n\nDebugging & Modernization\n- Checked all image/script links, set up linter, improved accessibility, and optimized performance\n- Removed outdated elements, unified all pages, and added animated/video backgrounds\n\nChallenges & Solutions\n- Weather API integration: geolocation, error handling, and data formatting\n- Animated backgrounds: balancing visual appeal with readability and performance\n- Responsiveness: ensuring a great look on all devices\n\nFinal Thoughts\nThis project blends design, interactivity, and real-world data into a single, cohesive portfolio. The result is a site that not only showcases my work but also demonstrates my ability to build modern, user-friendly web applications.\n\nCheck it out, explore the weather dashboard, and let me know what you think!\n\nIf you have any questions about the build process, want to collaborate, or just want to say hi, feel free to reach out via the contact page!`;
+  const charLimit = 300;
+  const blogContentShort = document.getElementById('blogContentShort');
+  const blogContentFull = document.getElementById('blogContentFull');
+  const seeMoreBtn = document.getElementById('seeMoreBtn');
+
+  function formatBlogText(text) {
+    // Simple formatter: paragraphs and line breaks
+    return text.split('\n').map(line => {
+      if (line.startsWith('- ')) return `<li>${line.slice(2)}</li>`;
+      if (line.trim() === '') return '';
+      if (line.endsWith(':')) return `<h3 style='color:#ffe066;margin-top:1.2rem;'>${line}</h3>`;
+      return `<p>${line}</p>`;
+    }).join('');
+  }
+
+  const shortText = blogFullText.slice(0, charLimit) + '...';
+  blogContentShort.innerHTML = formatBlogText(shortText);
+  blogContentFull.innerHTML = formatBlogText(blogFullText);
+
+  seeMoreBtn.addEventListener('click', function() {
+    if (blogContentFull.style.display === 'none') {
+      blogContentFull.style.display = '';
+      blogContentShort.style.display = 'none';
+      seeMoreBtn.textContent = 'See less';
+    } else {
+      blogContentFull.style.display = 'none';
+      blogContentShort.style.display = '';
+      seeMoreBtn.textContent = 'See more';
+    }
+  });
+
+  // Back to Top button logic
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  </script>
 </body>
 </html> 
