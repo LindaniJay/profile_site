@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function initBackToTop() {
     const backToTopBtn = document.createElement('button');
     backToTopBtn.className = 'back-to-top';
-    backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    backToTopBtn.innerHTML = '⬆️';
     backToTopBtn.setAttribute('aria-label', 'Back to top');
     document.body.appendChild(backToTopBtn);
     

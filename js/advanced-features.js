@@ -271,58 +271,10 @@ document.addEventListener('DOMContentLoaded', function() {
           button.setAttribute('aria-label', 'Interactive button');
         }
       });
-      
-      // Add skip links
-      const skipLink = document.createElement('a');
-      skipLink.href = '#main-content';
-      skipLink.textContent = 'Skip to main content';
-      skipLink.className = 'skip-link';
-      skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #000;
-        color: #fff;
-        padding: 8px;
-        text-decoration: none;
-        z-index: 1000;
-        transition: top 0.3s;
-      `;
-      
-      skipLink.addEventListener('focus', () => {
-        skipLink.style.top = '6px';
-      });
-      
-      skipLink.addEventListener('blur', () => {
-        skipLink.style.top = '-40px';
-      });
-      
-      document.body.insertBefore(skipLink, document.body.firstChild);
     }
     
     initHighContrastMode() {
-      const highContrastToggle = document.createElement('button');
-      highContrastToggle.textContent = 'High Contrast';
-      highContrastToggle.className = 'high-contrast-toggle';
-      highContrastToggle.style.cssText = `
-        position: fixed;
-        bottom: 100px;
-        right: 30px;
-        background: #000;
-        color: #fff;
-        border: 2px solid #fff;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 1000;
-      `;
-      
-      highContrastToggle.addEventListener('click', () => {
-        document.body.classList.toggle('high-contrast');
-        const isHighContrast = document.body.classList.contains('high-contrast');
-        highContrastToggle.textContent = isHighContrast ? 'Normal Contrast' : 'High Contrast';
-      });
-      
-      document.body.appendChild(highContrastToggle);
+      // High contrast mode removed as requested
     }
   }
   
@@ -620,6 +572,18 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===========================================
   // INITIALIZE ALL FEATURES
   // ===========================================
+  
+  // Remove any existing accessibility buttons
+  const skipLink = document.querySelector('.skip-link');
+  const highContrastToggle = document.querySelector('.high-contrast-toggle');
+  
+  if (skipLink) {
+    skipLink.remove();
+  }
+  
+  if (highContrastToggle) {
+    highContrastToggle.remove();
+  }
   
   // Initialize all advanced features
   const githubIntegration = new GitHubIntegration();

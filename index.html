@@ -90,7 +90,7 @@
     <!-- Main content area: hero section, cards, etc. -->
     <div class="main-content">
       <!-- Hero section: formal intro, profile image, etc. -->
-      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+      <section class="hero-section animate-fade-in">
         <!-- Blurred background image for hero -->
         <div class="hero-blur-bg"></div>
         <div class="glass-card" style="max-width:600px;text-align:center;">
@@ -127,7 +127,30 @@
   <script src="js/sidebar.js"></script>
   <script src="js/landing-cards.js"></script>
   <script src="js/enhanced-features.js"></script>
-  <script src="js/advanced-features.js"></script>
+  <script>
+    // Remove any existing accessibility buttons immediately and on DOM load
+    function removeAccessibilityButtons() {
+      const skipLink = document.querySelector('.skip-link');
+      const highContrastToggle = document.querySelector('.high-contrast-toggle');
+      
+      if (skipLink) {
+        skipLink.remove();
+      }
+      
+      if (highContrastToggle) {
+        highContrastToggle.remove();
+      }
+    }
+    
+    // Run immediately
+    removeAccessibilityButtons();
+    
+    // Run on DOM load
+    document.addEventListener('DOMContentLoaded', removeAccessibilityButtons);
+    
+    // Run after a short delay to catch any dynamically added buttons
+    setTimeout(removeAccessibilityButtons, 100);
+  </script>
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   
   <!-- PWA Meta Tags -->

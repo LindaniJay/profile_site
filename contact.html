@@ -84,20 +84,20 @@
         </button>
       </div>
     </nav>
-    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
-      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;">
+    <div class="main-content">
+      <section class="hero-section animate-fade-in">
         <div class="hero-blur-bg"></div>
-        <h1 class="hero-title" style="text-align:center;margin-bottom:2rem;">Contact Me</h1>
-        <h2 style="font-size:1.5rem;margin-bottom:2rem;text-align:center;">Open for Opportunities — Let's Connect!</h2>
+        <h1 class="hero-title contact-title">Contact Me</h1>
+        <h2 class="contact-subtitle">Open for Opportunities — Let's Connect!</h2>
         
         <!-- Social Media Icons Section -->
-        <div class="contact-socials" style="display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;">
-          <a href="https://linkedin.com/in/lindani-jonase-368515304" target="_blank" aria-label="LinkedIn" class="contact-social-icon" style="font-size:2rem;color:#0077b5;transition:transform 0.2s;"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/lindanijay" target="_blank" aria-label="GitHub" class="contact-social-icon" style="font-size:2rem;color:#333;transition:transform 0.2s;"><i class="fab fa-github"></i></a>
-          <a href="mailto:lindanijonase@gmail.com" aria-label="Email" class="contact-social-icon" style="font-size:2rem;color:#ea4335;transition:transform 0.2s;"><i class="fas fa-envelope"></i></a>
+        <div class="contact-socials">
+          <a href="https://linkedin.com/in/lindani-jonase-368515304" target="_blank" aria-label="LinkedIn" class="contact-social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/lindanijay" target="_blank" aria-label="GitHub" class="contact-social-icon"><i class="fab fa-github"></i></a>
+          <a href="mailto:lindanijonase@gmail.com" aria-label="Email" class="contact-social-icon"><i class="fas fa-envelope"></i></a>
         </div>
         
-        <div class="glass-card animate-fade-in" style="--fade-in-delay:0.1s;max-width:600px;margin:0 auto;background:rgba(60,60,60,0.3);backdrop-filter:blur(15px);border:1px solid rgba(255,224,102,0.3);border-radius:1rem;padding:2rem;">
+        <div class="glass-card contact-form-card animate-fade-in" style="--fade-in-delay:0.1s;">
           <form action="https://formspree.io/f/xqaqrolr" method="POST" class="contact-form">
             <div class="form-group">
               <input type="text" name="name" class="form-input" placeholder="Your Name" required />
@@ -130,6 +130,29 @@
   </div>
   <script src="js/sidebar.js"></script>
   <script src="js/enhanced-features.js"></script>
-  <script src="js/advanced-features.js"></script>
+  <script>
+    // Remove any existing accessibility buttons immediately and on DOM load
+    function removeAccessibilityButtons() {
+      const skipLink = document.querySelector('.skip-link');
+      const highContrastToggle = document.querySelector('.high-contrast-toggle');
+      
+      if (skipLink) {
+        skipLink.remove();
+      }
+      
+      if (highContrastToggle) {
+        highContrastToggle.remove();
+      }
+    }
+    
+    // Run immediately
+    removeAccessibilityButtons();
+    
+    // Run on DOM load
+    document.addEventListener('DOMContentLoaded', removeAccessibilityButtons);
+    
+    // Run after a short delay to catch any dynamically added buttons
+    setTimeout(removeAccessibilityButtons, 100);
+  </script>
 </body>
 </html> 

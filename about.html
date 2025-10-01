@@ -81,22 +81,22 @@
         </button>
       </div>
     </nav>
-    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
-      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;overflow:hidden;">
+    <div class="main-content">
+      <section class="hero-section animate-fade-in">
         <div class="hero-blur-bg"></div>
-        <div class="glass-card" style="max-width:600px;width:100%;margin:0 auto;text-align:center;">
-          <img src="Assets/Images/JONAS.JPG" alt="Lindani Jonase" class="hero-avatar" style="margin-bottom:1.5rem;" />
-          <h1 style="font-size:2.5rem;margin-bottom:1rem;">About Me</h1>
-          <p style="font-size:1.15rem;margin-bottom:2rem;">I'm Lindani Jonase, an enthusiastic software engineer from South Africa, dedicated to building scalable and elegant digital solutions for businesses across the continent and beyond. I specialise in Python, Java, and JavaScript, along with modern web and backend development frameworks. My expertise extends to Django, Flutter, PostgreSQL, and REST API architecture, ensuring robust and efficient applications. I have a passion for crafting user-focused, high-performance solutions that seamlessly integrate functionality, aesthetics, and innovation, helping South African businesses compete in the global digital economy.</p>
+        <div class="glass-card about-intro-card">
+          <img src="Assets/Images/JONAS.JPG" alt="Lindani Jonase" class="hero-avatar" />
+          <h1 class="about-title">About Me</h1>
+          <p class="about-description">I'm Lindani Jonase, an enthusiastic software engineer from South Africa, dedicated to building scalable and elegant digital solutions for businesses across the continent and beyond. I specialise in Python, Java, and JavaScript, along with modern web and backend development frameworks. My expertise extends to Django, Flutter, PostgreSQL, and REST API architecture, ensuring robust and efficient applications. I have a passion for crafting user-focused, high-performance solutions that seamlessly integrate functionality, aesthetics, and innovation, helping South African businesses compete in the global digital economy.</p>
           
         </div>
         
         <!-- Enhanced Skills Section -->
-        <div style="width:100%;margin:2rem 0;">
-          <h3 style="font-size:1.5rem;margin-bottom:2rem;text-align:center;">Technical Skills</h3>
+        <div class="skills-section">
+          <h3 class="skills-title">Technical Skills</h3>
           
           <!-- Skills Progress Bars -->
-          <div class="glass-card" style="max-width:800px;margin:0 auto;padding:2rem;">
+          <div class="glass-card skills-progress-card">
             <div class="skill-item">
               <div class="skill-header">
                 <span class="skill-name">JavaScript</span>
@@ -159,70 +159,70 @@
           </div>
           
           <!-- Skills Grid for Visual Appeal -->
-          <div class="skills-grid" style="margin-top:2rem;">
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🌐</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">HTML5</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Semantic markup & accessibility</p>
+          <div class="skills-grid">
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🌐</div>
+              <h4 class="skill-name">HTML5</h4>
+              <p class="skill-description">Semantic markup & accessibility</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🎨</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">CSS3</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Styling & animations</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🎨</div>
+              <h4 class="skill-name">CSS3</h4>
+              <p class="skill-description">Styling & animations</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">⚡</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">JavaScript</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">ES6+ & modern features</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">⚡</div>
+              <h4 class="skill-name">JavaScript</h4>
+              <p class="skill-description">ES6+ & modern features</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">⚛️</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">React</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Component-based UI</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">⚛️</div>
+              <h4 class="skill-name">React</h4>
+              <p class="skill-description">Component-based UI</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🟢</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Node.js</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Server-side JavaScript</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🟢</div>
+              <h4 class="skill-name">Node.js</h4>
+              <p class="skill-description">Server-side JavaScript</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">☕</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Java</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Object-oriented programming</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">☕</div>
+              <h4 class="skill-name">Java</h4>
+              <p class="skill-description">Object-oriented programming</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🐍</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Python</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Data science & automation</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🐍</div>
+              <h4 class="skill-name">Python</h4>
+              <p class="skill-description">Data science & automation</p>
             </div>
             
-            <div class="glass-card" style="text-align:center;">
-              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🗄️</div>
-              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">SQLite / SQL</h4>
-              <p style="font-size:0.9rem;color:#6b7280;">Database management</p>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🗄️</div>
+              <h4 class="skill-name">SQLite / SQL</h4>
+              <p class="skill-description">Database management</p>
             </div>
           </div>
         </div>
         
           
-          <div style="margin-top:2rem;display:flex;gap:1.2rem;">
+          <div class="about-actions">
             <a href="mailto:lindanijonase@gmail.com" class="modern-btn">Email Me</a>
             <a href="portfolio.html" class="modern-btn outline">See My Work</a>
           </div>
-          <a href="Assets/RESUME/Lindani_Jonase_Resume.pdf" download class="modern-btn" style="margin:1.2rem auto 0 auto;display:inline-flex;align-items:center;gap:0.6em;font-size:1.08rem;">
-            <i class="fas fa-download" style="font-size:1.2em;"></i> Download Resume (PDF)
+          <a href="Assets/RESUME/Lindani_Jonase_Resume.pdf" download class="modern-btn download-btn">
+            <i class="fas fa-download"></i> Download Resume (PDF)
           </a>
         </div>
         
         <!-- GitHub Stats Section -->
-        <div class="glass-card" style="max-width:800px;margin:2rem auto;padding:2rem;">
-          <h3 style="font-size:1.5rem;margin-bottom:1.5rem;text-align:center;color:#ffe066;">GitHub Activity</h3>
+        <div class="glass-card github-stats-card">
+          <h3 class="github-stats-title">GitHub Activity</h3>
           
           <!-- GitHub Stats Grid -->
           <div class="github-stats" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin:2rem 0;padding:1rem;background:rgba(0,0,0,0.2);border-radius:0.5rem;">
@@ -266,6 +266,29 @@
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/enhanced-features.js"></script>
-  <script src="js/advanced-features.js"></script>
+  <script>
+    // Remove any existing accessibility buttons immediately and on DOM load
+    function removeAccessibilityButtons() {
+      const skipLink = document.querySelector('.skip-link');
+      const highContrastToggle = document.querySelector('.high-contrast-toggle');
+      
+      if (skipLink) {
+        skipLink.remove();
+      }
+      
+      if (highContrastToggle) {
+        highContrastToggle.remove();
+      }
+    }
+    
+    // Run immediately
+    removeAccessibilityButtons();
+    
+    // Run on DOM load
+    document.addEventListener('DOMContentLoaded', removeAccessibilityButtons);
+    
+    // Run after a short delay to catch any dynamically added buttons
+    setTimeout(removeAccessibilityButtons, 100);
+  </script>
 </body>
 </html> 

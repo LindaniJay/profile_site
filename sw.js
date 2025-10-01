@@ -15,7 +15,6 @@ const STATIC_ASSETS = [
   '/js/sidebar.js',
   '/js/portfolio-modal.js',
   '/js/enhanced-features.js',
-  '/js/advanced-features.js',
   '/Assets/video/bg.mp4',
   '/Assets/Images/JONAS2.JPG'
 ];

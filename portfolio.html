@@ -82,9 +82,9 @@
         </button>
       </div>
     </nav>
-    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
-      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;">
-        <h1 class="hero-title" style="text-align:center;margin-bottom:2rem;">My Projects</h1>
+    <div class="main-content">
+      <section class="hero-section animate-fade-in">
+        <h1 class="hero-title portfolio-title">My Projects</h1>
         
         <!-- Project Filter Buttons -->
         <div class="project-filters">
@@ -96,132 +96,132 @@
           <button class="filter-btn" data-filter="game">Games</button>
         </div>
         
-        <div class="portfolio-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1200px;margin:0 auto;">
+        <div class="portfolio-grid">
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.1s;" data-category="frontend">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="RIDE-SHARE Project Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea,#764ba2);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">🚗</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="RIDE-SHARE Project Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">🚗</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">RIDE-SHARE</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">TypeScript • React • Real-time</div>
-            <p style="margin-bottom:1.5rem;">A modern ride-sharing application built with TypeScript, featuring real-time location tracking, driver matching, and secure payment processing.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">TypeScript</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">React</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Real-time</span>
+            <h3 class="project-title">RIDE-SHARE</h3>
+            <div class="project-tech">TypeScript • React • Real-time</div>
+            <p class="project-description">A modern ride-sharing application built with TypeScript, featuring real-time location tracking, driver matching, and secure payment processing.</p>
+            <div class="project-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Real-time</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="ride_share">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.2s;" data-category="fullstack">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="THIRDEYE Project Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#f093fb,#f5576c);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">🔍</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="THIRDEYE Project Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">🔍</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">THIRDEYE</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">React • Node.js • MongoDB</div>
-            <p style="margin-bottom:1.5rem;">A full-stack web application for booking professional vehicle and property inspection services with detailed reporting and professional assessments.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">React</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Node.js</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">MongoDB</span>
+            <h3 class="project-title">THIRDEYE</h3>
+            <div class="project-tech">React • Node.js • MongoDB</div>
+            <p class="project-description">A full-stack web application for booking professional vehicle and property inspection services with detailed reporting and professional assessments.</p>
+            <div class="project-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="thirdeye">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.3s;" data-category="frontend">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Portfolio Website Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#43e97b,#38f9d7);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">👤</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Portfolio Website Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">👤</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">Portfolio Website</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">CSS • HTML • JavaScript</div>
-            <p style="margin-bottom:1.5rem;">A modern personal portfolio website showcasing projects, skills, and professional experience with glassmorphism design and responsive layout.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">CSS</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">HTML</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">JavaScript</span>
+            <h3 class="project-title">Portfolio Website</h3>
+            <div class="project-tech">CSS • HTML • JavaScript</div>
+            <p class="project-description">A modern personal portfolio website showcasing projects, skills, and professional experience with glassmorphism design and responsive layout.</p>
+            <div class="project-tags">
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">JavaScript</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="profile_site">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.4s;" data-category="utility">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Smart Load Shedding Manager Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#fa709a,#fee140);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">⚡</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Smart Load Shedding Manager Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">⚡</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">Smart Load Shedding Manager</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">JavaScript • South African Utility</div>
-            <p style="margin-bottom:1.5rem;">A smart utility application designed specifically for South African load shedding schedules, helping users manage power outages and plan accordingly.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">JavaScript</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Utility</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">South African</span>
+            <h3 class="project-title">Smart Load Shedding Manager</h3>
+            <div class="project-tech">JavaScript • South African Utility</div>
+            <p class="project-description">A smart utility application designed specifically for South African load shedding schedules, helping users manage power outages and plan accordingly.</p>
+            <div class="project-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Utility</span>
+              <span class="skill-tag">South African</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="load_shedding">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.5s;" data-category="frontend">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chess Multiplayer Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#4facfe,#00f2fe);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">♔</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chess Multiplayer Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">♔</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">Chess Multiplayer</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">TypeScript • WebSocket • Game</div>
-            <p style="margin-bottom:1.5rem;">A multiplayer chess game built with modern web technologies, featuring real-time gameplay, responsive design, and competitive play.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">TypeScript</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">WebSocket</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Game</span>
+            <h3 class="project-title">Chess Multiplayer</h3>
+            <div class="project-tech">TypeScript • WebSocket • Game</div>
+            <p class="project-description">A multiplayer chess game built with modern web technologies, featuring real-time gameplay, responsive design, and competitive play.</p>
+            <div class="project-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">WebSocket</span>
+              <span class="skill-tag">Game</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="chess_multiplayer">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.6s;" data-category="ai">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Web Builder Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea,#764ba2);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">🤖</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Web Builder Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">🤖</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">AI Web Builder</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">JavaScript • AI • Web Development</div>
-            <p style="margin-bottom:1.5rem;">An intelligent web development tool powered by AI that helps developers create websites faster with automated code generation and smart suggestions.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">JavaScript</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">AI</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Web Dev</span>
+            <h3 class="project-title">AI Web Builder</h3>
+            <div class="project-tech">JavaScript • AI • Web Development</div>
+            <p class="project-description">An intelligent web development tool powered by AI that helps developers create websites faster with automated code generation and smart suggestions.</p>
+            <div class="project-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">AI</span>
+              <span class="skill-tag">Web Dev</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="ai_web_builder">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.7s;" data-category="fullstack">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Website Builder Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#f093fb,#f5576c);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">🌐</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Website Builder Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">🌐</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">Website Builder</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">Python • Django • PostgreSQL</div>
-            <p style="margin-bottom:1.5rem;">A powerful website builder tool that allows users to create professional websites with drag-and-drop functionality and custom templates.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Python</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Django</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">PostgreSQL</span>
+            <h3 class="project-title">Website Builder</h3>
+            <div class="project-tech">Python • Django • PostgreSQL</div>
+            <p class="project-description">A powerful website builder tool that allows users to create professional websites with drag-and-drop functionality and custom templates.</p>
+            <div class="project-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">PostgreSQL</span>
             </div>
             <button class="btn btn-outline view-details-btn" data-project="website_builder">View Details</button>
           </div>
           
           <div class="glass-card project-card animate-fade-in" style="--fade-in-delay:0.8s;" data-category="game">
-            <div class="project-image" style="width:100%;height:200px;border-radius:0.5rem;margin-bottom:1rem;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;">
-              <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tic-Tac-Toe Game Preview" style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.3s ease;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#4facfe,#00f2fe);display:none;align-items:center;justify-content:center;color:white;font-size:2rem;">⭕</div>
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tic-Tac-Toe Game Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="project-fallback">⭕</div>
             </div>
-            <h3 style="font-size:1.5rem;margin-bottom:0.5rem;">Tic-Tac-Toe</h3>
-            <div style="color:#6b7280;margin-bottom:1rem;">Python • AI • Game Logic</div>
-            <p style="margin-bottom:1.5rem;">A classic Tic-Tac-Toe game with an intuitive interface and smart AI opponent for challenging gameplay and learning purposes.</p>
-            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;">
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Python</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">AI</span>
-              <span class="skill-tag" style="font-size:0.8rem;padding:0.2rem 0.5rem;">Game Logic</span>
-          </div>
+            <h3 class="project-title">Tic-Tac-Toe</h3>
+            <div class="project-tech">Python • AI • Game Logic</div>
+            <p class="project-description">A classic Tic-Tac-Toe game with an intuitive interface and smart AI opponent for challenging gameplay and learning purposes.</p>
+            <div class="project-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">AI</span>
+              <span class="skill-tag">Game Logic</span>
+            </div>
             <button class="btn btn-outline view-details-btn" data-project="tic_tac_toe">View Details</button>
           </div>
         </div>
@@ -241,6 +241,29 @@
   <script src="js/sidebar.js"></script>
   <script src="js/portfolio-modal.js"></script>
   <script src="js/enhanced-features.js"></script>
-  <script src="js/advanced-features.js"></script>
+  <script>
+    // Remove any existing accessibility buttons immediately and on DOM load
+    function removeAccessibilityButtons() {
+      const skipLink = document.querySelector('.skip-link');
+      const highContrastToggle = document.querySelector('.high-contrast-toggle');
+      
+      if (skipLink) {
+        skipLink.remove();
+      }
+      
+      if (highContrastToggle) {
+        highContrastToggle.remove();
+      }
+    }
+    
+    // Run immediately
+    removeAccessibilityButtons();
+    
+    // Run on DOM load
+    document.addEventListener('DOMContentLoaded', removeAccessibilityButtons);
+    
+    // Run after a short delay to catch any dynamically added buttons
+    setTimeout(removeAccessibilityButtons, 100);
+  </script>
 </body>
 </html> 
