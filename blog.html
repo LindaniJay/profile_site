@@ -14,46 +14,103 @@
   <div class="page-bg"></div>
   <div class="landing-bg-anim"></div>
   <div class="layout">
-    <div class="sidebar sidebar-visible">
-      <div class="sidebar-top">
-        <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </button>
-        <div class="sidebar-logo-area">
-          <img src="Assets/Images/JONAS2.JPG" alt="Sidebar Avatar" class="sidebar-avatar" />
-          <span class="sidebar-logo-name">Lindani Jonase</span>
+    <!-- Top Navigation Bar with Glassmorphism -->
+    <nav class="top-navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+          <img src="Assets/Images/JONAS2.JPG" alt="Lindani Jonase" class="navbar-avatar" />
+          <span class="navbar-name">Lindani Jonase</span>
         </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="index.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>Home</span>
+          </a></li>
+          <li><a href="about.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>About</span>
+          </a></li>
+          <li><a href="portfolio.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 6h-2l-2-2H8L6 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+            </svg>
+            <span>Portfolio</span>
+          </a></li>
+          <li><a href="blog.html" class="navbar-link active">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+            <span>Blog</span>
+          </a></li>
+          <li><a href="services.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Services</span>
+          </a></li>
+          <li><a href="contact.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>Contact</span>
+          </a></li>
+        </ul>
+
+        <!-- Theme Toggle & Clock -->
+        <div class="navbar-actions">
+          <div class="navbar-clock" id="navbarClock" title="Current Time">--:--:--</div>
+          <button id="themeToggle" class="navbar-theme-toggle" aria-label="Toggle theme">
+            <svg class="theme-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+            </svg>
+            <span id="themeToggleLabel">Dark Mode</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
-      <div class="sidebar-section-label">Menu</div>
-      <ul class="sidebar-links">
-        <li><a href="index.html"><span class="sidebar-emoji">🏠</span> <span>Home</span></a></li>
-        <li><a href="about.html"><span class="sidebar-emoji">👤</span> <span>About</span></a></li>
-        <li><a href="portfolio.html"><span class="sidebar-emoji">💼</span> <span>Portfolio</span></a></li>
-        <li><a href="blog.html" class="active"><span class="sidebar-emoji">📝</span> <span>Blog</span></a></li>
-        <li><a href="weather.html"><span class="sidebar-emoji">☀️</span> <span>Weather</span></a></li>
-        <li><a href="contact.html"><span class="sidebar-emoji">✉️</span> <span>Contact</span></a></li>
-        <li><a href="game.html"><span class="sidebar-emoji">🎮</span> <span>Game</span></a></li>
-      </ul>
-      <div class="sidebar-bottom">
-        <div class="sidebar-clock" id="sidebarClock" title="Current Time">--:--:--</div>
-        <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
-      </div>
-    </div>
-    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 2rem;box-sizing:border-box;">
-      <section class="hero-section animate-fade-in" style="min-height:100vh;padding-top:0;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;">
+    </nav>
+    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
+      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;">
         <div class="hero-blur-bg"></div>
-        <h1 class="hero-title">Blog</h1>
-        <div class="portfolio-grid">
-          <div class="modern-card animate-fade-in" id="blogCard" style="--fade-in-delay:0.1s;max-width:700px;">
+        <h1 class="hero-title" style="text-align:center;margin-bottom:2rem;">Blog</h1>
+        
+        <!-- Blog Search and Categories -->
+        <div class="glass-card" style="max-width:800px;margin:0 auto 2rem auto;padding:1.5rem;">
+          <div style="display:flex;gap:1rem;margin-bottom:1rem;flex-wrap:wrap;">
+            <div style="flex:1;min-width:200px;">
+              <input type="text" id="blogSearch" placeholder="Search blog posts..." style="width:100%;padding:0.75rem;border-radius:0.5rem;border:1px solid rgba(255,224,102,0.3);background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:1rem;">
+            </div>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+              <button class="filter-btn active" data-category="all">All Posts</button>
+              <button class="filter-btn" data-category="web-development">Web Dev</button>
+              <button class="filter-btn" data-category="tutorials">Tutorials</button>
+              <button class="filter-btn" data-category="projects">Projects</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-grid" style="display:flex;justify-content:center;">
+          <div class="glass-card animate-fade-in" id="blogCard" style="--fade-in-delay:0.1s;max-width:800px;width:100%;">
             <div id="blogContentShort">
               <!-- Short/truncated content will be injected by JS -->
             </div>
             <div id="blogContentFull" style="display:none;">
               <!-- Full content will be injected by JS -->
             </div>
-            <button id="seeMoreBtn" class="modern-btn outline" style="margin-top:1.2rem;">See more</button>
+            <button id="seeMoreBtn" class="btn btn-outline" style="margin-top:1.5rem;">See more</button>
           </div>
         </div>
       </section>
@@ -63,9 +120,10 @@
   <button id="backToTopBtn" title="Back to top" style="display:none;position:fixed;bottom:2.5rem;right:2.5rem;z-index:9999;background:#232b2b;color:#ffe066;border:none;border-radius:50%;width:48px;height:48px;font-size:2rem;box-shadow:0 2px 12px #0008;cursor:pointer;transition:opacity 0.3s;opacity:0.85;"><i class="fas fa-arrow-up"></i></button>
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
+  <script src="js/enhanced-features.js"></script>
   <script>
   // Blog post content as plain text (for truncation)
-  const blogFullText = `Building My Modern Portfolio Website: A Deep Dive\n\nA behind-the-scenes look at designing, developing, and modernizing my interactive portfolio and weather dashboard.\n\nProject Vision\n- Visually striking dark theme with navy, black, and deep accent colors\n- Highly interactive: live weather dashboard, animated backgrounds, smooth transitions\n- Professional & personal: formal intro, detailed about, portfolio of latest projects\n- Responsive & accessible for all devices\n\nKey Features\n- Modern Dark Theme: Custom palette, gradients, glassmorphism, and video backgrounds\n- Sidebar Navigation: Fixed, collapsible, with icons and live clock\n- Home & About: Formal intro, skills, and a modern card layout\n- Portfolio Showcase: Latest projects in stylish cards\n- Weather Dashboard: Real-time data, animated backgrounds, 5-day forecast, geolocation, robust error handling\n- Blog & Contact: Technical articles and a modern contact form\n- Game Page: A fun, interactive JavaScript game\n\nTech Stack\n- HTML5: Semantic, accessible markup\n- CSS3: Custom properties, Flexbox, Grid, glassmorphism, gradients, and video backgrounds\n- Vanilla JavaScript (ES6+): All interactivity, API integration, geolocation, and animations (no React or frameworks)\n- OpenWeatherMap API: Real-time weather data (current, hourly, 5-day)\n- FontAwesome: Crisp, scalable icons\n- Responsive Design: Media queries and flexible layouts for all devices\n- Assets: Custom images, profile photos, and a looping background video\n\nDebugging & Modernization\n- Checked all image/script links, set up linter, improved accessibility, and optimized performance\n- Removed outdated elements, unified all pages, and added animated/video backgrounds\n\nChallenges & Solutions\n- Weather API integration: geolocation, error handling, and data formatting\n- Animated backgrounds: balancing visual appeal with readability and performance\n- Responsiveness: ensuring a great look on all devices\n\nFinal Thoughts\nThis project blends design, interactivity, and real-world data into a single, cohesive portfolio. The result is a site that not only showcases my work but also demonstrates my ability to build modern, user-friendly web applications.\n\nCheck it out, explore the weather dashboard, and let me know what you think!\n\nIf you have any questions about the build process, want to collaborate, or just want to say hi, feel free to reach out via the contact page!`;
+  const blogFullText = `Building My Modern Portfolio Website: A South African Developer's Journey\n\nA behind-the-scenes look at designing, developing, and modernizing my interactive portfolio website as a South African software engineer.\n\nProject Vision\n- Visually striking dark theme with navy, black, and deep accent colours\n- Highly interactive: live weather dashboard, animated backgrounds, smooth transitions\n- Professional & personal: formal intro, detailed about, portfolio of latest projects\n- Responsive & accessible for all devices, optimised for South African internet conditions\n\nKey Features\n- Modern Dark Theme: Custom palette, gradients, glassmorphism, and video backgrounds\n- Sidebar Navigation: Fixed, collapsible, with icons and live clock\n- Home & About: Formal intro, skills, and a modern card layout\n- Portfolio Showcase: Latest projects in stylish cards\n- Weather Dashboard: Real-time data for South African cities, animated backgrounds, 5-day forecast, geolocation, robust error handling\n- Blog & Contact: Technical articles and a modern contact form\n- Game Page: A fun, interactive JavaScript game\n\nTech Stack\n- HTML5: Semantic, accessible markup\n- CSS3: Custom properties, Flexbox, Grid, glassmorphism, gradients, and video backgrounds\n- Vanilla JavaScript (ES6+): All interactivity, API integration, geolocation, and animations (no React or frameworks)\n- OpenWeatherMap API: Real-time weather data (current, hourly, 5-day) for South African cities\n- FontAwesome: Crisp, scalable icons\n- Responsive Design: Media queries and flexible layouts for all devices\n- Assets: Custom images, profile photos, and a looping background video\n\nDebugging & Modernisation\n- Checked all image/script links, set up linter, improved accessibility, and optimised performance\n- Removed outdated elements, unified all pages, and added animated/video backgrounds\n\nChallenges & Solutions\n- Weather API integration: geolocation for South African cities, error handling, and data formatting\n- Animated backgrounds: balancing visual appeal with readability and performance\n- Responsiveness: ensuring a great look on all devices, including slower connections\n\nFinal Thoughts\nThis project blends design, interactivity, and real-world data into a single, cohesive portfolio. The result is a site that not only showcases my work but also demonstrates my ability to build modern, user-friendly web applications that work well in the South African context.\n\nCheck it out, explore the weather dashboard, and let me know what you think!\n\nIf you have any questions about the build process, want to collaborate, or just want to say hi, feel free to reach out via the contact page!`;
   const charLimit = 300;
   const blogContentShort = document.getElementById('blogContentShort');
   const blogContentFull = document.getElementById('blogContentFull');
@@ -110,5 +168,6 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
   </script>
+  <script src="js/advanced-features.js"></script>
 </body>
 </html> 

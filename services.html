@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Lindani Jonase Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="Assets/Images/JONAS2.JPG">
+</head>
+<body>
+  <video class="site-bg-video" autoplay loop muted playsinline>
+    <source src="Assets/video/bg.mp4" type="video/mp4" />
+  </video>
+  <div class="page-bg"></div>
+  <div class="landing-bg-anim"></div>
+  <div class="layout">
+    <!-- Top Navigation Bar with Glassmorphism -->
+    <nav class="top-navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+          <img src="Assets/Images/JONAS2.JPG" alt="Lindani Jonase" class="navbar-avatar" />
+          <span class="navbar-name">Lindani Jonase</span>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="index.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>Home</span>
+          </a></li>
+          <li><a href="about.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>About</span>
+          </a></li>
+          <li><a href="portfolio.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 6h-2l-2-2H8L6 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+            </svg>
+            <span>Portfolio</span>
+          </a></li>
+          <li><a href="blog.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+            <span>Blog</span>
+          </a></li>
+          <li><a href="services.html" class="navbar-link active">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Services</span>
+          </a></li>
+          <li><a href="contact.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>Contact</span>
+          </a></li>
+        </ul>
+
+        <!-- Theme Toggle & Clock -->
+        <div class="navbar-actions">
+          <div class="navbar-clock" id="navbarClock" title="Current Time">--:--:--</div>
+          <button id="themeToggle" class="navbar-theme-toggle" aria-label="Toggle theme">
+            <svg class="theme-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+            </svg>
+            <span id="themeToggleLabel">Dark Mode</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+    
+    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
+      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;">
+        <div class="hero-blur-bg"></div>
+        <h1 class="hero-title" style="text-align:center;margin-bottom:2rem;">My Services</h1>
+        <p style="text-align:center;font-size:1.2rem;margin-bottom:3rem;max-width:600px;margin-left:auto;margin-right:auto;">Professional development services tailored for South African businesses and entrepreneurs</p>
+        
+        <!-- Services Grid -->
+        <div class="portfolio-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1200px;margin:0 auto;">
+          
+          <!-- Web Development -->
+          <div class="glass-card animate-fade-in" style="--fade-in-delay:0.1s;text-align:center;">
+            <div style="font-size:3rem;margin-bottom:1rem;">🌐</div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem;color:#ffe066;">Web Development</h3>
+            <p style="margin-bottom:1.5rem;color:#b0b8c1;">Custom websites and web applications built with modern technologies</p>
+            <ul style="text-align:left;margin-bottom:2rem;color:#e0e0e0;">
+              <li>Responsive Design</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>Database Integration</li>
+              <li>API Development</li>
+            </ul>
+            <div style="font-size:1.5rem;font-weight:bold;color:#ffe066;margin-bottom:1rem;">Starting at R8,500</div>
+            <button class="btn btn-outline">Get Quote</button>
+          </div>
+          
+          <!-- Mobile App Development -->
+          <div class="glass-card animate-fade-in" style="--fade-in-delay:0.2s;text-align:center;">
+            <div style="font-size:3rem;margin-bottom:1rem;">📱</div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem;color:#ffe066;">Mobile App Development</h3>
+            <p style="margin-bottom:1.5rem;color:#b0b8c1;">Cross-platform mobile applications for iOS and Android</p>
+            <ul style="text-align:left;margin-bottom:2rem;color:#e0e0e0;">
+              <li>Flutter Development</li>
+              <li>Native iOS/Android</li>
+              <li>UI/UX Design</li>
+              <li>App Store Deployment</li>
+              <li>Maintenance & Support</li>
+            </ul>
+            <div style="font-size:1.5rem;font-weight:bold;color:#ffe066;margin-bottom:1rem;">Starting at R13,600</div>
+            <button class="btn btn-outline">Get Quote</button>
+          </div>
+          
+          <!-- Consulting -->
+          <div class="glass-card animate-fade-in" style="--fade-in-delay:0.3s;text-align:center;">
+            <div style="font-size:3rem;margin-bottom:1rem;">💡</div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem;color:#ffe066;">Technical Consulting</h3>
+            <p style="margin-bottom:1.5rem;color:#b0b8c1;">Expert guidance on technology decisions and architecture</p>
+            <ul style="text-align:left;margin-bottom:2rem;color:#e0e0e0;">
+              <li>Technology Stack Selection</li>
+              <li>Code Review & Optimization</li>
+              <li>Architecture Planning</li>
+              <li>Performance Analysis</li>
+              <li>Team Training</li>
+            </ul>
+            <div style="font-size:1.5rem;font-weight:bold;color:#ffe066;margin-bottom:1rem;">R1,275/hour</div>
+            <button class="btn btn-outline">Get Quote</button>
+          </div>
+          
+          <!-- Maintenance & Support -->
+          <div class="glass-card animate-fade-in" style="--fade-in-delay:0.4s;text-align:center;">
+            <div style="font-size:3rem;margin-bottom:1rem;">🔧</div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem;color:#ffe066;">Maintenance & Support</h3>
+            <p style="margin-bottom:1.5rem;color:#b0b8c1;">Ongoing support and maintenance for your applications</p>
+            <ul style="text-align:left;margin-bottom:2rem;color:#e0e0e0;">
+              <li>Bug Fixes & Updates</li>
+              <li>Security Patches</li>
+              <li>Performance Monitoring</li>
+              <li>24/7 Support</li>
+              <li>Regular Backups</li>
+            </ul>
+            <div style="font-size:1.5rem;font-weight:bold;color:#ffe066;margin-bottom:1rem;">R3,400/month</div>
+            <button class="btn btn-outline">Get Quote</button>
+          </div>
+          
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="glass-card" style="max-width:600px;margin:3rem auto 0 auto;text-align:center;padding:2rem;">
+          <h3 style="font-size:1.5rem;margin-bottom:1rem;color:#ffe066;">Ready to Start Your Project?</h3>
+          <p style="margin-bottom:2rem;color:#e0e0e0;">Let's discuss your requirements and create something amazing together. I work with businesses across South Africa and internationally.</p>
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="contact.html" class="btn">Contact Me</a>
+            <a href="portfolio.html" class="btn btn-outline">View My Work</a>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/enhanced-features.js"></script>
+  <script src="js/advanced-features.js"></script>
+</body>
+</html>

@@ -3,47 +3,86 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Project data (expand as needed)
   const projects = {
-    chess_multiplayer: {
-      title: 'chess_multiplayer',
-      tech: 'TypeScript',
-      description: 'A multiplayer chess game with real-time play, chat, and elegant UI. Built with TypeScript and WebSockets.',
-      image: 'Assets/Images/chess.png', // Replace with your image
+    ride_share: {
+      title: 'RIDE-SHARE',
+      tech: 'TypeScript • React • Real-time',
+      description: 'A modern ride-sharing application built with TypeScript, featuring real-time location tracking, driver matching, and secure payment processing. Designed for the South African market with local payment methods and route optimization.',
+      image: 'Assets/Images/ride_share.png',
       links: [
-        { label: 'GitHub', url: 'https://github.com/lindanijay/chess_multiplayer' },
+        { label: 'GitHub', url: 'https://github.com/lindanijay/RIDE-SHARE' },
         { label: 'Live Demo', url: '#' }
       ]
     },
-    'Wbsite-Builder': {
-      title: 'Wbsite-Builder',
-      tech: 'Python',
-      description: 'A website builder tool that lets users create and deploy static sites with ease. Features drag-and-drop UI and template support.',
-      image: 'Assets/Images/website_builder.png', // Replace with your image
+    thirdeye: {
+      title: 'THIRDEYE',
+      tech: 'React • Node.js • MongoDB',
+      description: 'A full-stack web application for booking professional vehicle and property inspection services. Features include 200+ point mechanical inspection, full diagnostic scan, body and chassis assessment, pre-lease condition assessment, plumbing and electrical checks, and comprehensive photo/video documentation with detailed condition reports. Built with React 19, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB.',
+      image: 'Assets/Images/thirdeye.png',
       links: [
-        { label: 'GitHub', url: 'https://github.com/lindanijay/Wbsite-Builder' },
+        { label: 'GitHub', url: 'https://github.com/lindanijay/THIRDEYE' },
         { label: 'Live Demo', url: '#' }
-      ]
-    },
-    'Tic-Tac-Toe': {
-      title: 'Tic-Tac-Toe',
-      tech: 'Python',
-      description: 'A classic Tic-Tac-Toe game with a clean UI and smart AI opponent. Play against the computer or a friend.',
-      image: 'Assets/Images/tic_tac_toe.png', // Replace with your image
-      links: [
-        { label: 'GitHub', url: 'https://github.com/lindanijay/Tic-Tac-Toe' },
-        { label: 'Play Online', url: '#' }
       ]
     },
     profile_site: {
-      title: 'profile_site',
-      tech: 'CSS',
-      description: 'A personal profile website template with modern design, responsive layout, and easy customization.',
-      image: 'Assets/Images/profile_site.png', // Replace with your image
+      title: 'Portfolio Website',
+      tech: 'CSS • HTML • JavaScript',
+      description: 'A modern personal portfolio website showcasing projects, skills, and professional experience with glassmorphism design and responsive layout. Optimised for South African internet conditions.',
+      image: 'Assets/Images/profile_site.png',
       links: [
         { label: 'GitHub', url: 'https://github.com/lindanijay/profile_site' },
         { label: 'Live Demo', url: '#' }
       ]
     },
-    // Add more projects here...
+    load_shedding: {
+      title: 'Smart Load Shedding Manager',
+      tech: 'JavaScript • South African Utility',
+      description: 'A smart utility application designed specifically for South African load shedding schedules, helping users manage power outages and plan accordingly. Features real-time updates and notifications.',
+      image: 'Assets/Images/load_shedding.png',
+      links: [
+        { label: 'GitHub', url: 'https://github.com/lindanijay/smart-load-shedding-manager' },
+        { label: 'Live Demo', url: '#' }
+      ]
+    },
+    chess_multiplayer: {
+      title: 'Chess Multiplayer',
+      tech: 'TypeScript • WebSocket • Game',
+      description: 'A multiplayer chess game built with modern web technologies, featuring real-time gameplay, responsive design, and competitive play. Includes South African time zones and local tournaments.',
+      image: 'Assets/Images/chess.png',
+      links: [
+        { label: 'GitHub', url: 'https://github.com/lindanijay/chess_multiplayer' },
+        { label: 'Live Demo', url: '#' }
+      ]
+    },
+    ai_web_builder: {
+      title: 'AI Web Builder',
+      tech: 'JavaScript • AI • Web Development',
+      description: 'An intelligent web development tool powered by AI that helps developers create websites faster with automated code generation and smart suggestions. Designed for South African developers.',
+      image: 'Assets/Images/ai_web_builder.png',
+      links: [
+        { label: 'GitHub', url: 'https://github.com/lindanijay/ai-web_builder' },
+        { label: 'Live Demo', url: '#' }
+      ]
+    },
+    website_builder: {
+      title: 'Website Builder',
+      tech: 'Python • Django • PostgreSQL',
+      description: 'A powerful website builder tool that allows users to create professional websites with drag-and-drop functionality and custom templates. Built for South African small businesses.',
+      image: 'Assets/Images/website_builder.png',
+      links: [
+        { label: 'GitHub', url: 'https://github.com/lindanijay/Wbsite-Builder' },
+        { label: 'Live Demo', url: '#' }
+      ]
+    },
+    tic_tac_toe: {
+      title: 'Tic-Tac-Toe',
+      tech: 'Python • AI • Game Logic',
+      description: 'A classic Tic-Tac-Toe game with an intuitive interface and smart AI opponent for challenging gameplay and learning purposes. Features multiple difficulty levels.',
+      image: 'Assets/Images/tic_tac_toe.png',
+      links: [
+        { label: 'GitHub', url: 'https://github.com/lindanijay/Tic-Tac-Toe' },
+        { label: 'Play Online', url: '#' }
+      ]
+    }
   };
 
   const modal = document.getElementById('projectModal');

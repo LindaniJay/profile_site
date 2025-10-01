@@ -13,84 +13,204 @@
   <div class="page-bg"></div>
   <div class="landing-bg-anim"></div>
   <div class="layout">
-    <div class="sidebar sidebar-visible">
-      <div class="sidebar-top">
-        <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </button>
-        <div class="sidebar-logo-area">
-          <img src="Assets/Images/JONAS2.JPG" alt="Sidebar Avatar" class="sidebar-avatar" />
-          <span class="sidebar-logo-name">Lindani Jonase</span>
+    <!-- Top Navigation Bar with Glassmorphism -->
+    <nav class="top-navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-container">
+        <!-- Logo/Brand -->
+        <div class="navbar-brand">
+          <img src="Assets/Images/JONAS2.JPG" alt="Lindani Jonase" class="navbar-avatar" />
+          <span class="navbar-name">Lindani Jonase</span>
         </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navbar-links" id="navbarLinks">
+          <li><a href="index.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>Home</span>
+          </a></li>
+          <li><a href="about.html" class="navbar-link active">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>About</span>
+          </a></li>
+          <li><a href="portfolio.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 6h-2l-2-2H8L6 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+            </svg>
+            <span>Portfolio</span>
+          </a></li>
+          <li><a href="blog.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+            </svg>
+            <span>Blog</span>
+          </a></li>
+          <li><a href="services.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Services</span>
+          </a></li>
+          <li><a href="contact.html" class="navbar-link">
+            <svg class="navbar-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>Contact</span>
+          </a></li>
+        </ul>
+
+        <!-- Theme Toggle & Clock -->
+        <div class="navbar-actions">
+          <div class="navbar-clock" id="navbarClock" title="Current Time">--:--:--</div>
+          <button id="themeToggle" class="navbar-theme-toggle" aria-label="Toggle theme">
+            <svg class="theme-icon" role="img" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+            </svg>
+            <span id="themeToggleLabel">Dark Mode</span>
+        </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-controls="navbarLinks" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
-      <div class="sidebar-section-label">Menu</div>
-      <ul class="sidebar-links">
-        <li><a href="index.html"><span class="sidebar-emoji">🏠</span> <span>Home</span></a></li>
-        <li><a href="about.html" class="active"><span class="sidebar-emoji">👤</span> <span>About</span></a></li>
-        <li><a href="portfolio.html"><span class="sidebar-emoji">💼</span> <span>Portfolio</span></a></li>
-        <li><a href="blog.html"><span class="sidebar-emoji">📝</span> <span>Blog</span></a></li>
-        <li><a href="weather.html"><span class="sidebar-emoji">☀️</span> <span>Weather</span></a></li>
-        <li><a href="contact.html"><span class="sidebar-emoji">✉️</span> <span>Contact</span></a></li>
-        <li><a href="game.html"><span class="sidebar-emoji">🎮</span> <span>Game</span></a></li>
-      </ul>
-      <div class="sidebar-bottom">
-        <div class="sidebar-clock" id="sidebarClock" title="Current Time">--:--:--</div>
-        <button id="themeToggle" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span id="themeToggleLabel">Dark Mode</span></button>
-      </div>
-    </div>
-    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 2rem;box-sizing:border-box;">
-      <section class="hero-section animate-fade-in" style="min-height:100vh;padding-top:0;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;overflow:hidden;">
+    </nav>
+    <div class="main-content" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;">
+      <section class="hero-section animate-fade-in" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;overflow:hidden;">
         <div class="hero-blur-bg"></div>
-        <div class="about-modern-card" style="background:rgba(24,28,32,0.96);border-radius:1.5rem;box-shadow:0 8px 32px #000a;padding:2.8rem 2.2rem;max-width:540px;width:100%;margin:0 auto;display:flex;flex-direction:column;align-items:center;">
-          <img src="Assets/Images/JONAS.JPG" alt="Lindani Jonase" class="hero-avatar" style="margin-bottom:1.2rem;" />
-          <h1 class="hero-title" style="margin-bottom:0.7rem;">About Me</h1>
-          <p class="hero-tagline" style="max-width:420px;margin:0 auto 1.5rem auto;font-size:1.15rem;line-height:1.7;">I'm Lindani Jonase, an enthusiastic software engineer dedicated to building scalable and elegant digital solutions. I specialize in Python, Java, and JavaScript, along with modern web and backend development frameworks. My expertise extends to Django, Flutter, PostgreSQL, and REST API architecture, ensuring robust and efficient applications. I have a passion for crafting user-focused, high-performance solutions that seamlessly integrate functionality, aesthetics, and innovation.</p>
-          <hr style="width:60px;border:1.5px solid #232b2b;margin:1.5rem 0;opacity:0.3;" />
-          <div style="width:100%;max-width:420px;text-align:left;">
-            <h3 style="color:#b0b8c1;font-size:1.08rem;margin-bottom:0.7rem;">Skills</h3>
-            <ul style="padding-left:1.2rem;margin:0 0 1.2rem 0;line-height:1.7;color:#e0e0e0;">
-              <li>JavaScript (ES6+), Python, TypeScript, Java</li>
-              <li>React, Node.js, Express</li>
-              <li>HTML5, CSS3, SASS</li>
-              <li>REST APIs, WebSockets</li>
-              <li>UI/UX Design, Responsive Web Design</li>
-              <li>Git, GitHub, Agile Development</li>
-            </ul>
+        <div class="glass-card" style="max-width:600px;width:100%;margin:0 auto;text-align:center;">
+          <img src="Assets/Images/JONAS.JPG" alt="Lindani Jonase" class="hero-avatar" style="margin-bottom:1.5rem;" />
+          <h1 style="font-size:2.5rem;margin-bottom:1rem;">About Me</h1>
+          <p style="font-size:1.15rem;margin-bottom:2rem;">I'm Lindani Jonase, an enthusiastic software engineer from South Africa, dedicated to building scalable and elegant digital solutions for businesses across the continent and beyond. I specialise in Python, Java, and JavaScript, along with modern web and backend development frameworks. My expertise extends to Django, Flutter, PostgreSQL, and REST API architecture, ensuring robust and efficient applications. I have a passion for crafting user-focused, high-performance solutions that seamlessly integrate functionality, aesthetics, and innovation, helping South African businesses compete in the global digital economy.</p>
+          
+        </div>
+        
+        <!-- Enhanced Skills Section -->
+        <div style="width:100%;margin:2rem 0;">
+          <h3 style="font-size:1.5rem;margin-bottom:2rem;text-align:center;">Technical Skills</h3>
+          
+          <!-- Skills Progress Bars -->
+          <div class="glass-card" style="max-width:800px;margin:0 auto;padding:2rem;">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="90"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="85"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="75"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="70"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="65"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Django</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" data-percentage="60"></div>
+              </div>
+            </div>
           </div>
-          <!-- Animated Skills Visualization -->
-          <section class="skills-visual-section" style="width:100%;max-width:420px;margin:2rem auto 0 auto;">
-            <h3 style="color:#ffe066;font-size:1.08rem;margin-bottom:1.2rem;">Skill Proficiency</h3>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">JavaScript</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:90%"></div></div>
+          
+          <!-- Skills Grid for Visual Appeal -->
+          <div class="skills-grid" style="margin-top:2rem;">
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🌐</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">HTML5</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Semantic markup & accessibility</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">Python</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:85%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🎨</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">CSS3</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Styling & animations</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">Java</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:75%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">⚡</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">JavaScript</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">ES6+ & modern features</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">React</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:80%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">⚛️</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">React</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Component-based UI</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">Node.js</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:75%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🟢</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Node.js</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Server-side JavaScript</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">HTML5 & CSS3</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:95%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">☕</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Java</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Object-oriented programming</p>
             </div>
-            <div class="skill-bar-group">
-              <div class="skill-bar-label">UI/UX Design</div>
-              <div class="skill-bar"><div class="skill-bar-fill" style="--bar-width:80%"></div></div>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🐍</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">Python</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Data science & automation</p>
             </div>
-          </section>
+            
+            <div class="glass-card" style="text-align:center;">
+              <div style="font-size:2.5rem;margin-bottom:0.5rem;">🗄️</div>
+              <h4 style="font-size:1.1rem;margin-bottom:0.5rem;">SQLite / SQL</h4>
+              <p style="font-size:0.9rem;color:#6b7280;">Database management</p>
+            </div>
+          </div>
+        </div>
+        
+          
           <div style="margin-top:2rem;display:flex;gap:1.2rem;">
             <a href="mailto:lindanijonase@gmail.com" class="modern-btn">Email Me</a>
             <a href="portfolio.html" class="modern-btn outline">See My Work</a>
@@ -99,10 +219,53 @@
             <i class="fas fa-download" style="font-size:1.2em;"></i> Download Resume (PDF)
           </a>
         </div>
+        
+        <!-- GitHub Stats Section -->
+        <div class="glass-card" style="max-width:800px;margin:2rem auto;padding:2rem;">
+          <h3 style="font-size:1.5rem;margin-bottom:1.5rem;text-align:center;color:#ffe066;">GitHub Activity</h3>
+          
+          <!-- GitHub Stats Grid -->
+          <div class="github-stats" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin:2rem 0;padding:1rem;background:rgba(0,0,0,0.2);border-radius:0.5rem;">
+            <div class="stat-item" style="text-align:center;">
+              <div class="stat-number" style="font-size:1.5rem;font-weight:bold;color:#ffe066;">--</div>
+              <div class="stat-label" style="font-size:0.8rem;color:#b0b8c1;">Repositories</div>
+            </div>
+            <div class="stat-item" style="text-align:center;">
+              <div class="stat-number" style="font-size:1.5rem;font-weight:bold;color:#ffe066;">--</div>
+              <div class="stat-label" style="font-size:0.8rem;color:#b0b8c1;">Followers</div>
+            </div>
+            <div class="stat-item" style="text-align:center;">
+              <div class="stat-number" style="font-size:1.5rem;font-weight:bold;color:#ffe066;">--</div>
+              <div class="stat-label" style="font-size:0.8rem;color:#b0b8c1;">Following</div>
+            </div>
+            <div class="stat-item" style="text-align:center;">
+              <div class="stat-number" style="font-size:1.5rem;font-weight:bold;color:#ffe066;">--</div>
+              <div class="stat-label" style="font-size:0.8rem;color:#b0b8c1;">GitHub Member Since</div>
+            </div>
+          </div>
+          
+          <!-- Recent Repositories -->
+          <div class="recent-repos" style="margin:2rem 0;">
+            <h4 style="color:#ffe066;margin-bottom:1rem;">Recent Projects</h4>
+            <div style="display:grid;gap:1rem;">
+              <!-- GitHub repos will be populated here -->
+            </div>
+          </div>
+          
+          <!-- Language Statistics -->
+          <div class="language-stats" style="margin:2rem 0;">
+            <h4 style="color:#ffe066;margin-bottom:1rem;">Languages I Use</h4>
+            <div style="display:grid;gap:0.5rem;">
+              <!-- Language stats will be populated here -->
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
   <script src="https://kit.fontawesome.com/4adad1b6e0.js" crossorigin="anonymous"></script>
   <script src="js/sidebar.js"></script>
+  <script src="js/enhanced-features.js"></script>
+  <script src="js/advanced-features.js"></script>
 </body>
 </html> 

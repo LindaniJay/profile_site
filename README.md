@@ -83,9 +83,7 @@ portfolio_site/
 ├── about.html
 ├── portfolio.html
 ├── blog.html
-├── weather.html
 ├── contact.html
-├── game.html
 └── README.md
 ```
 
