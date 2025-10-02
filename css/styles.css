@@ -16,7 +16,7 @@
   --black: #000;
   --card-dark: #181c20;
   --accent-dark: #232b2b;
-  --text-light: #e0e0e0;
+  --text-light: #ffffff;
   --text-dark: #222;
   
   /* Navbar height variables for consistent spacing */
@@ -95,7 +95,7 @@ body.blog .hero-blur-bg {
 }
 
 .blog-card p {
-  color: #d1d5db;
+  color: #f3f4f6;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -210,7 +210,7 @@ body.blog .hero-blur-bg {
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  color: #888;
+  color: #ffffff;
   margin-bottom: 1.2rem;
 }
 
@@ -1076,13 +1076,13 @@ body.blog .hero-blur-bg {
 
 /* Text styles for glass cards */
 .glass-card h1, .glass-card h2, .glass-card h3, .glass-card h4, .glass-card h5, .glass-card h6 {
-  color: #1f2937;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .glass-card p {
-  color: #374151;
+  color: #f3f4f6;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -1092,7 +1092,7 @@ body.blog .hero-blur-bg {
 }
 
 .dark .glass-card p {
-  color: #d1d5db;
+  color: #f3f4f6;
 }
 
 /* Button styles for glass cards */
@@ -3040,7 +3040,7 @@ body.blog .modern-card > * {
 
 .skill-level {
   font-size: 0.9rem;
-  color: #b0b8c1;
+  color: #d1d5db;
 }
 
 .skill-progress {
@@ -3124,7 +3124,7 @@ body.blog .modern-card > * {
 }
 
 .testimonial-info p {
-  color: #b0b8c1;
+  color: #d1d5db;
   margin: 0;
   font-size: 0.9rem;
 }
@@ -3188,7 +3188,7 @@ body.blog .modern-card > * {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  color: #b0b8c1;
+  color: #d1d5db;
   transition: all 0.3s ease;
   pointer-events: none;
 }
@@ -4427,7 +4427,7 @@ body.blog .modern-card > * {
 
 .skill-description {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #9ca3af;
   margin: 0;
 }
 
@@ -4482,7 +4482,7 @@ body.blog .modern-card > * {
 
 .stat-label {
   font-size: 0.8rem;
-  color: #b0b8c1;
+  color: #d1d5db;
 }
 
 /* Mobile responsiveness for About page */
@@ -4697,7 +4697,7 @@ body.blog .modern-card > * {
 }
 
 .project-tech {
-  color: #6b7280;
+  color: #d1d5db;
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
@@ -4945,7 +4945,7 @@ body.blog .modern-card > * {
 
 .service-description {
   margin-bottom: 1.5rem;
-  color: #b0b8c1;
+  color: #d1d5db;
 }
 
 .service-features {
@@ -5171,7 +5171,7 @@ body.blog .modern-card > * {
 }
 
 .form-input::placeholder {
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 .form-error {
